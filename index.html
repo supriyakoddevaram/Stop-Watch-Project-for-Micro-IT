@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clock / Stopwatch / Timer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Clock, Stopwatch & Timer</h1>
+
+    <!-- Clock -->
+    <div class="section">
+      <h2>Current Time</h2>
+      <div id="clock" class="display">00:00:00 AM</div>
+    </div>
+
+    <!-- Stopwatch -->
+    <div class="section">
+      <h2>Stopwatch</h2>
+      <div id="stopwatch" class="display">00:00:00</div>
+      <div class="buttons">
+        <button id="startStopwatch">Start</button>
+        <button id="stopStopwatch">Stop</button>
+        <button id="resetStopwatch">Reset</button>
+      </div>
+    </div>
+
+    <!-- Timer -->
+    <div class="section">
+      <h2>Countdown Timer</h2>
+      <input type="number" id="timerHours" placeholder="HH" min="0" />
+      <input type="number" id="timerMinutes" placeholder="MM" min="0" max="59"/>
+      <input type="number" id="timerSeconds" placeholder="SS" min="0" max="59"/>
+      <div id="timer" class="display">00:00:00</div>
+      <div class="buttons">
+        <button id="startTimer">Start</button>
+        <button id="stopTimer">Stop</button>
+        <button id="resetTimer">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="alarmSound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" preload="auto"></audio>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

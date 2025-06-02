@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #1e1e2f;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #2e2e3f;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  text-align: center;
+  width: 340px;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.display {
+  font-size: 2rem;
+  background: #12121f;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #4caf50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+#stopStopwatch, #stopTimer {
+  background: #f44336;
+}
+#stopStopwatch:hover, #stopTimer:hover {
+  background: #e53935;
+}
+
+#resetStopwatch, #resetTimer {
+  background: #2196f3;
+}
+#resetStopwatch:hover, #resetTimer:hover {
+  background: #1976d2;
+}
+
+input[type="number"] {
+  width: 70px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
